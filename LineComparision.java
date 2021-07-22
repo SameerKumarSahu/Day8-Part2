@@ -22,7 +22,7 @@ public class LineComparision {
 			}
 	
 	public double LengthofLine2() {
-		
+		//Take the values from the user
 		System.out.print("Enter the value of X3 :-");
 			int X1 =sc.nextInt();
 		System.out.print("Enter the value of Y3 :-");
@@ -40,10 +40,13 @@ public class LineComparision {
 	public void comparision(double lenghtOfLine, double lenghtOfLine2) {			// Compare the distance between of the two Straight lines
 			// Comparing two lines 
 		if ( lenghtOfLine == lenghtOfLine2 ) {
-     		 System.out.println("The lengths of these two straight lines are Preferable");
+    		 System.out.println("The lengths of two straight lines are same");
+		}
+		else if (lenghtOfLine > lenghtOfLine2) {
+			  System.out.println("1st straight line Length/Distance is greater than 2nd straight line length ");
 		}
 		else  {
-              System.out.println("The lengths of these two straight lines aren't Preferable");
+             System.out.println("2nd straight line Length/Distance is greater than 1st straight line length ");
 		}
 	}
 
